@@ -1,0 +1,83 @@
+/Users/shaananc/Downloads/unimelb-comp10002-2021-s1-assignment1/non-anonymised/inchongc/unimelb-comp10002-2021-s1-assignment1/on-time/code
+{
+    "slug": "/opt/check_files",
+    "results": [
+        {
+            "name": "compiles",
+            "description": "program compiles",
+            "passed": true,
+            "log": [
+                "running clang program.c a1grader.c aes.c -o program -std=c11 -ggdb -lm -pedantic -Wall..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": null
+        },
+        {
+            "name": "stage0",
+            "description": "stage0",
+            "passed": true,
+            "log": [
+                "running ./program < /opt/check_files/input.txt | sed -n '/Stage 0/,/Stage 1/p'...",
+                "checking for output \"Stage 0\\n==========\\nLength of encrypted ciphertext (bytes): 128\\nEncrypted ciphertext, as hexadecimal bytes and ASCII: (below)\\n0x0000: 90 db c9 29 96 c2 3a 7f  8f 79 49 34 b9 53 25 3b  \u2027\u2027\u2027)\u2027\u2027:\u2027\u2027yI4\u2027S%;\\n0x0010: 15 40 47 e5 96 bd d2 f4  3f ef 46 cb 9b cb a5 01  \u2027@G\u2027\u2027\u2027\u2027\u2027?\u2027F\u2027\u2027\u2027\u2027\u2027\\n0x0020: 84 e7 5a 22 fc f4 38 df  26 55 96 5d 07 0d 61 3f  \u2027\u2027Z\"\u2027\u20278\u2027&U\u2027]\u2027\u2027a?\\n0x0030: a3 da 9a e5 ae fe cf d6  aa 68 2a 9b cd bf 83 1a  \u2027\u2027\u2027\u2027\u2027\u2027\u2027\u2027\u2027h*\u2027\u2027\u2027\u2027\u2027\\n0x0040: 86 1e 6f 97 7e f6 56 e5  e2 b5 11 0f d8 47 52 a0  \u2027\u2027o\u2027~\u2027V\u2027\u2027\u2027\u2027\u2027\u2027GR\u2027\\n0x0050: ce a4 3c c8 a0 16 08 2b  45 fe 4c d4 1f 17 91 77  \u2027\u2027<\u2027\u2027\u2027\u2027+E\u2027L\u2027\u2027\u2027\u2027w\\n0x0060: ed 11 3d 85 6b 44 0d f7  a8 98 3c 07 a8 aa 69 2b  \u2027\u2027=\u2027kD\u2027\u2027\u2027\u2027<\u2027\u2027\u2027i+\\n0x0070: 28 91 c2 06 16 82 6d b4  36 14 fc c6 aa f8 48 ce  (\u2027\u2027\u2027\u2027\u2027m\u20276\u2027\u2027\u2027\u2027\u2027H\u2027\\n\\nOutputs, as hexadecimal bytes and ASCII: (below)\\n  O_ 9: a2 f4 8a 79 54 56 fd 4a  34 cb 1d 6a 02 b0 34 b3  \u2027\u2027\u2027yTV\u2027J4\u2027\u2027j\u2027\u20274\u2027\\n  O_10: 42 db e8 07 fe e7 49 05  e4 d0 c6 48 d7 f8 3e 1e  B\u2027\u2027\u2027\u2027\u2027I\u2027\u2027\u2027\u2027H\u2027\u2027>\u2027\\n\\nTimesteps, as hexadecimal bytes and ASCII: (below)\\n  T_ 0: 51 57 93 60 0f fe 0b 00  51 57 93 60 0f fe 0b 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_ 1: 51 57 93 60 fe 12 0c 00  51 57 93 60 fe 12 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_ 2: 51 57 93 60 e7 20 0c 00  51 57 93 60 e7 20 0c 00  QW\u2027`\u2027 \u2027\u2027QW\u2027`\u2027 \u2027\u2027\\n  T_ 3: 51 57 93 60 95 2f 0c 00  51 57 93 60 95 2f 0c 00  QW\u2027`\u2027/\u2027\u2027QW\u2027`\u2027/\u2027\u2027\\n  T_ 4: 51 57 93 60 09 3e 0c 00  51 57 93 60 09 3e 0c 00  QW\u2027`\u2027>\u2027\u2027QW\u2027`\u2027>\u2027\u2027\\n  T_ 5: 51 57 93 60 f5 4d 0c 00  51 57 93 60 f5 4d 0c 00  QW\u2027`\u2027M\u2027\u2027QW\u2027`\u2027M\u2027\u2027\\n  T_ 6: 51 57 93 60 ff 5c 0c 00  51 57 93 60 ff 5c 0c 00  QW\u2027`\u2027\\\u2027\u2027QW\u2027`\u2027\\\u2027\u2027\\n  T_ 7: 51 57 93 60 23 6b 0c 00  51 57 93 60 23 6b 0c 00  QW\u2027`#k\u2027\u2027QW\u2027`#k\u2027\u2027\\n  T_ 8: 51 57 93 60 a7 78 0c 00  51 57 93 60 a7 78 0c 00  QW\u2027`\u2027x\u2027\u2027QW\u2027`\u2027x\u2027\u2027\\n  T_ 9: 51 57 93 60 ca 87 0c 00  51 57 93 60 ca 87 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_10: 51 57 93 60 95 95 0c 00  51 57 93 60 95 95 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_11: 51 57 93 60 1f a3 0c 00  51 57 93 60 1f a3 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_12: 51 57 93 60 98 b0 0c 00  51 57 93 60 98 b0 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_13: 51 57 93 60 ea bd 0c 00  51 57 93 60 ea bd 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_14: 51 57 93 60 52 cd 0c 00  51 57 93 60 52 cd 0c 00  QW\u2027`R\u2027\u2027\u2027QW\u2027`R\u2027\u2027\u2027\\n  T_15: 51 57 93 60 94 db 0c 00  51 57 93 60 94 db 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_16: 51 57 93 60 66 e9 0c 00  51 57 93 60 66 e9 0c 00  QW\u2027`f\u2027\u2027\u2027QW\u2027`f\u2027\u2027\u2027\\n  T_17: 51 57 93 60 e5 f6 0c 00  51 57 93 60 e5 f6 0c 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_18: 51 57 93 60 8f 04 0d 00  51 57 93 60 8f 04 0d 00  QW\u2027`\u2027\u2027\u2027\u2027QW\u2027`\u2027\u2027\u2027\u2027\\n  T_19: 51 57 93 60 52 12 0d 00  51 57 93 60 52 12 0d 00  QW\u2027`R\u2027\u2027\u2027QW\u2027`R\u2027\u2027\u2027\\n\\nCipherbook: (below, wordwrapped to 80 chars)\\nCall me Ishmael  Some years ago never mind how long precisely having little or n\\no money in my purse, and nothing particular to interest me on shore, I thought I\\n-would sail about a little and see the watery part of the world  It is a way I h\\nave of driving off/the spleen and regulating the circulation.  Whenever I find m\\nyself growing grim about the mouth whenever it is a damp, drizzly November in my\\n soul; whenever I find myself involuntarily pausing before coffin warehouses, an\\nd bringing up the rear of every funeral I meet; and especially whenever my hypos\\n get such an upper hand of me, that it requires a strong moral principle to prev\\nent me from deliberately stepping into the street, and methodically knocking peo\\nple's hats?offthen I account it high time to get to sea as soon as I can.  This \\nis my substitute for pistol and ball.  With a philosophical flourish Cato throws\\n himself upon his sword; I quietly take to the ship.  There is nothing surprisin\\ng in this.  If they but knew it, almost all men in their degree some time or oth\\ner, cherish very nearly the same feelings towards the ocean with me.  There now \\nis your insular city of the Manhattoes, belted round by wharves as Indian isles \\nby coral reefs commerce surrounds it with her surf.  Right and l, the streextrem\\ne dw\\n\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": "compiles"
+        },
+        {
+            "name": "stage1",
+            "description": "stage1",
+            "passed": true,
+            "log": [
+                "running ./program < /opt/check_files/input.txt | sed -n '/Stage 1/,/Stage 2/p'...",
+                "checking for output \"Stage 1\\n==========\\nPunctuation stripped cipherbook length: 1024\\nPunctuation stripped cipherbook, as hexadecimal bytes and ASCII: (below)\\n0x0000: 43 61 6c 6c 6d 65 49 73  68 6d 61 65 6c 53 6f 6d  CallmeIshmaelSom\\n0x0010: 65 79 65 61 72 73 61 67  6f 6e 65 76 65 72 6d 69  eyearsagonevermi\\n0x0020: 6e 64 68 6f 77 6c 6f 6e  67 70 72 65 63 69 73 65  ndhowlongprecise\\n0x0030: 6c 79 68 61 76 69 6e 67  6c 69 74 74 6c 65 6f 72  lyhavinglittleor\\n0x0040: 6e 6f 6d 6f 6e 65 79 69  6e 6d 79 70 75 72 73 65  nomoneyinmypurse\\n0x0050: 61 6e 64 6e 6f 74 68 69  6e 67 70 61 72 74 69 63  andnothingpartic\\n0x0060: 75 6c 61 72 74 6f 69 6e  74 65 72 65 73 74 6d 65  ulartointerestme\\n0x0070: 6f 6e 73 68 6f 72 65 49  74 68 6f 75 67 68 74 49  onshoreIthoughtI\\n0x0080: 77 6f 75 6c 64 73 61 69  6c 61 62 6f 75 74 61 6c  wouldsailaboutal\\n0x0090: 69 74 74 6c 65 61 6e 64  73 65 65 74 68 65 77 61  ittleandseethewa\\n0x00a0: 74 65 72 79 70 61 72 74  6f 66 74 68 65 77 6f 72  terypartofthewor\\n0x00b0: 6c 64 49 74 69 73 61 77  61 79 49 68 61 76 65 6f  ldItisawayIhaveo\\n0x00c0: 66 64 72 69 76 69 6e 67  6f 66 66 74 68 65 73 70  fdrivingoffthesp\\n0x00d0: 6c 65 65 6e 61 6e 64 72  65 67 75 6c 61 74 69 6e  leenandregulatin\\n0x00e0: 67 74 68 65 63 69 72 63  75 6c 61 74 69 6f 6e 57  gthecirculationW\\n0x00f0: 68 65 6e 65 76 65 72 49  66 69 6e 64 6d 79 73 65  heneverIfindmyse\\n0x0100: 6c 66 67 72 6f 77 69 6e  67 67 72 69 6d 61 62 6f  lfgrowinggrimabo\\n0x0110: 75 74 74 68 65 6d 6f 75  74 68 77 68 65 6e 65 76  utthemouthwhenev\\n0x0120: 65 72 69 74 69 73 61 64  61 6d 70 64 72 69 7a 7a  eritisadampdrizz\\n0x0130: 6c 79 4e 6f 76 65 6d 62  65 72 69 6e 6d 79 73 6f  lyNovemberinmyso\\n0x0140: 75 6c 77 68 65 6e 65 76  65 72 49 66 69 6e 64 6d  ulwheneverIfindm\\n0x0150: 79 73 65 6c 66 69 6e 76  6f 6c 75 6e 74 61 72 69  yselfinvoluntari\\n0x0160: 6c 79 70 61 75 73 69 6e  67 62 65 66 6f 72 65 63  lypausingbeforec\\n0x0170: 6f 66 66 69 6e 77 61 72  65 68 6f 75 73 65 73 61  offinwarehousesa\\n0x0180: 6e 64 62 72 69 6e 67 69  6e 67 75 70 74 68 65 72  ndbringingupther\\n0x0190: 65 61 72 6f 66 65 76 65  72 79 66 75 6e 65 72 61  earofeveryfunera\\n0x01a0: 6c 49 6d 65 65 74 61 6e  64 65 73 70 65 63 69 61  lImeetandespecia\\n0x01b0: 6c 6c 79 77 68 65 6e 65  76 65 72 6d 79 68 79 70  llywhenevermyhyp\\n0x01c0: 6f 73 67 65 74 73 75 63  68 61 6e 75 70 70 65 72  osgetsuchanupper\\n0x01d0: 68 61 6e 64 6f 66 6d 65  74 68 61 74 69 74 72 65  handofmethatitre\\n0x01e0: 71 75 69 72 65 73 61 73  74 72 6f 6e 67 6d 6f 72  quiresastrongmor\\n0x01f0: 61 6c 70 72 69 6e 63 69  70 6c 65 74 6f 70 72 65  alprincipletopre\\n0x0200: 76 65 6e 74 6d 65 66 72  6f 6d 64 65 6c 69 62 65  ventmefromdelibe\\n0x0210: 72 61 74 65 6c 79 73 74  65 70 70 69 6e 67 69 6e  ratelysteppingin\\n0x0220: 74 6f 74 68 65 73 74 72  65 65 74 61 6e 64 6d 65  tothestreetandme\\n0x0230: 74 68 6f 64 69 63 61 6c  6c 79 6b 6e 6f 63 6b 69  thodicallyknocki\\n0x0240: 6e 67 70 65 6f 70 6c 65  73 68 61 74 73 6f 66 66  ngpeopleshatsoff\\n0x0250: 74 68 65 6e 49 61 63 63  6f 75 6e 74 69 74 68 69  thenIaccountithi\\n0x0260: 67 68 74 69 6d 65 74 6f  67 65 74 74 6f 73 65 61  ghtimetogettosea\\n0x0270: 61 73 73 6f 6f 6e 61 73  49 63 61 6e 54 68 69 73  assoonasIcanThis\\n0x0280: 69 73 6d 79 73 75 62 73  74 69 74 75 74 65 66 6f  ismysubstitutefo\\n0x0290: 72 70 69 73 74 6f 6c 61  6e 64 62 61 6c 6c 57 69  rpistolandballWi\\n0x02a0: 74 68 61 70 68 69 6c 6f  73 6f 70 68 69 63 61 6c  thaphilosophical\\n0x02b0: 66 6c 6f 75 72 69 73 68  43 61 74 6f 74 68 72 6f  flourishCatothro\\n0x02c0: 77 73 68 69 6d 73 65 6c  66 75 70 6f 6e 68 69 73  wshimselfuponhis\\n0x02d0: 73 77 6f 72 64 49 71 75  69 65 74 6c 79 74 61 6b  swordIquietlytak\\n0x02e0: 65 74 6f 74 68 65 73 68  69 70 54 68 65 72 65 69  etotheshipTherei\\n0x02f0: 73 6e 6f 74 68 69 6e 67  73 75 72 70 72 69 73 69  snothingsurprisi\\n0x0300: 6e 67 69 6e 74 68 69 73  49 66 74 68 65 79 62 75  nginthisIftheybu\\n0x0310: 74 6b 6e 65 77 69 74 61  6c 6d 6f 73 74 61 6c 6c  tknewitalmostall\\n0x0320: 6d 65 6e 69 6e 74 68 65  69 72 64 65 67 72 65 65  menintheirdegree\\n0x0330: 73 6f 6d 65 74 69 6d 65  6f 72 6f 74 68 65 72 63  sometimeorotherc\\n0x0340: 68 65 72 69 73 68 76 65  72 79 6e 65 61 72 6c 79  herishverynearly\\n0x0350: 74 68 65 73 61 6d 65 66  65 65 6c 69 6e 67 73 74  thesamefeelingst\\n0x0360: 6f 77 61 72 64 73 74 68  65 6f 63 65 61 6e 77 69  owardstheoceanwi\\n0x0370: 74 68 6d 65 54 68 65 72  65 6e 6f 77 69 73 79 6f  thmeTherenowisyo\\n0x0380: 75 72 69 6e 73 75 6c 61  72 63 69 74 79 6f 66 74  urinsularcityoft\\n0x0390: 68 65 4d 61 6e 68 61 74  74 6f 65 73 62 65 6c 74  heManhattoesbelt\\n0x03a0: 65 64 72 6f 75 6e 64 62  79 77 68 61 72 76 65 73  edroundbywharves\\n0x03b0: 61 73 49 6e 64 69 61 6e  69 73 6c 65 73 62 79 63  asIndianislesbyc\\n0x03c0: 6f 72 61 6c 72 65 65 66  73 63 6f 6d 6d 65 72 63  oralreefscommerc\\n0x03d0: 65 73 75 72 72 6f 75 6e  64 73 69 74 77 69 74 68  esurroundsitwith\\n0x03e0: 68 65 72 73 75 72 66 52  69 67 68 74 61 6e 64 6c  hersurfRightandl\\n0x03f0: 74 68 65 73 74 72 65 65  78 74 72 65 6d 65 64 77  thestreextremedw\\n\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": "compiles"
+        },
+        {
+            "name": "stage2",
+            "description": "stage2",
+            "passed": true,
+            "log": [
+                "running ./program < /opt/check_files/input.txt | sed -n '/Stage 2/,/Stage 3/p'...",
+                "checking for output \"Stage 2\\n==========\\nKey k2: 71 75 69 72 65 73 61 73  74 72 6f 6e 67 6d 6f 72  quiresastrongmor\\n\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": "compiles"
+        },
+        {
+            "name": "stage3",
+            "description": "stage3",
+            "passed": true,
+            "log": [
+                "running ./program < /opt/check_files/input.txt | sed -n '/Stage 3/,/Stage 4/p'...",
+                "checking for output \"Stage 3\\n==========\\nKey k1, as hexadecimal bytes and ASCII: (below)\\n0x0000: da b2 a8 47 ec aa 55 11  e8 59 20 47 99 3c 50 49  \u2027\u2027\u2027G\u2027\u2027U\u2027\u2027Y G\u2027<PI\\n0x0010: 35 2d 26 8b b6 d2 bc d4  4b 87 23 eb f2 a5 d6 68  5-&\u2027\u2027\u2027\u2027\u2027K\u2027#\u2027\u2027\u2027\u2027h\\n0x0020: e0 82 74 02 b4 91 1f ac  06 27 f3 3c 63 74 08 51  \u2027\u2027t\u2027\u2027\u2027\u2027\u2027\u2027'\u2027<ct\u2027Q\\n0x0030: c4 fa ee 8d cb de bf b9  c3 1b 45 f5 ed d9 ec 68  \u2027\u2027\u2027\u2027\u2027\u2027\u2027\u2027\u2027\u2027E\u2027\u2027\u2027\u2027h\\n0x0040: a6 49 0a f2 15 d6 67 d4  cc 95 56 60 b7 23 30 d9  \u2027I\u2027\u2027\u2027\u2027g\u2027\u2027\u2027V`\u2027#0\u2027\\n0x0050: ab 84 78 ba 8e 36 4b 44  2d 90 29 ad 31 37 dd 3e  \u2027\u2027x\u2027\u20276KD-\u2027)\u202717\u2027>\\n0x0060: ac 5c 1d d2 0a 3e 2d 9f  cd ea 59 29 88 8a 49 0b  \u2027\\\u2027\u2027\u2027>-\u2027\u2027\u2027Y)\u2027\u2027I\u2027\\n0x0070: 08 b1 e2 26 36 a2 4d 94  16 34 dc e6 8a d8 68 ee  \u2027\u2027\u2027&6\u2027M\u2027\u20274\u2027\u2027\u2027\u2027h\u2027\\n\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": "compiles"
+        },
+        {
+            "name": "stage4",
+            "description": "stage4",
+            "passed": true,
+            "log": [
+                "running ./program < /opt/check_files/input.txt | sed -n '/Stage 4/,/Stage 5/p'...",
+                "checking for output \"Stage 4\\n==========\\nDecrypted ciphertext, as hexadecimal bytes and ASCII: (below)\\n0x0000: 4a 69 61 6e 7a 68 6f 6e  67 20 69 73 20 6f 75 72  Jianzhong is our\\n0x0010: 20 6d 61 6e 20 6f 6e 20  74 68 65 20 69 6e 73 69   man on the insi\\n0x0020: 64 65 2e 20 48 65 27 73  20 72 65 61 64 79 69 6e  de. He's readyin\\n0x0030: 67 20 74 68 65 20 70 6f  69 73 6f 6e 20 66 6f 72  g the poison for\\n0x0040: 20 57 65 65 6b 20 31 31  2e 20 47 6f 6f 64 62 79   Week 11. Goodby\\n0x0050: 65 20 44 72 2e 20 43 6f  68 6e 65 79 2e 20 4c 49  e Dr. Cohney. LI\\n0x0060: 41 4d 20 57 61 7a 20 68  65 72 65 2e 20 20 20 20  AM Waz here.    \\n0x0070: 20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20                  \\n\\nDecrypted ciphertext, as plaintext: (below)\\nJianzhong is our man on the inside. He's readying the poison for Week 11. Goodbye Dr. Cohney. LIAM Waz here.                    \\n\"...",
+                "checking that program exited with status 0..."
+            ],
+            "cause": null,
+            "data": {},
+            "dependency": "compiles"
+        }
+    ],
+    "version": "3.2.2"
+}

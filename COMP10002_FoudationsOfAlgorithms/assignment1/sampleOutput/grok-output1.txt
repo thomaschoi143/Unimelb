@@ -1,0 +1,158 @@
+Stage 0
+==========
+Length of encrypted ciphertext (bytes): 128
+Encrypted ciphertext, as hexadecimal bytes and ASCII: (below)
+0x0000: 2c 05 7a b9 92 cd d3 f0  7f 11 55 85 f1 ce e9 5f  ,‧z‧‧‧‧‧‧‧U‧‧‧‧_
+0x0010: b1 7a b2 07 14 53 c5 3a  0f 10 1a bd bc c1 3f 43  ‧z‧‧‧S‧:‧‧‧‧‧‧?C
+0x0020: 09 ea 59 0c 87 a7 f7 d5  8b 43 e3 5c 3f 47 53 79  ‧‧Y‧‧‧‧‧‧C‧\?GSy
+0x0030: 42 c2 43 a1 72 fb 48 d7  08 67 ad 6a 9c ab b6 9a  B‧C‧r‧H‧‧g‧j‧‧‧‧
+0x0040: 2f d3 ad b0 b6 4d 68 1a  2b b6 cd 2e 3b 5d b7 ce  /‧‧‧‧Mh‧+‧‧.;]‧‧
+0x0050: 05 0d 4d 75 4a d5 e4 31  6b 34 67 54 0c 18 49 5b  ‧‧MuJ‧‧1k4gT‧‧I[
+0x0060: 7e 20 1d e5 dd a4 0d 3c  bb 30 08 26 ce e6 b2 16  ~ ‧‧‧‧‧<‧0‧&‧‧‧‧
+0x0070: d7 2b 7c 01 7b 36 eb f9  7e 9b 23 80 09 51 06 bd  ‧+|‧{6‧‧~‧#‧‧Q‧‧
+
+Outputs, as hexadecimal bytes and ASCII: (below)
+  O_ 9: 36 bf 89 02 32 11 4e d9  5b 3a 6f b0 09 b9 24 10  6‧‧‧2‧N‧[:o‧‧‧$‧
+  O_10: 9a d8 52 90 c8 59 7f bd  36 f2 51 a4 b5 c5 34 44  ‧‧R‧‧Y‧‧6‧Q‧‧‧4D
+
+Timesteps, as hexadecimal bytes and ASCII: (below)
+  T_ 0: a4 3a 79 60 67 33 01 00  a4 3a 79 60 67 33 01 00  ‧:y`g3‧‧‧:y`g3‧‧
+  T_ 1: a4 3a 79 60 de 7c 01 00  a4 3a 79 60 de 7c 01 00  ‧:y`‧|‧‧‧:y`‧|‧‧
+  T_ 2: a4 3a 79 60 6c 9b 01 00  a4 3a 79 60 6c 9b 01 00  ‧:y`l‧‧‧‧:y`l‧‧‧
+  T_ 3: a4 3a 79 60 62 b5 01 00  a4 3a 79 60 62 b5 01 00  ‧:y`b‧‧‧‧:y`b‧‧‧
+  T_ 4: a4 3a 79 60 0d cd 01 00  a4 3a 79 60 0d cd 01 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_ 5: a4 3a 79 60 50 e0 01 00  a4 3a 79 60 50 e0 01 00  ‧:y`P‧‧‧‧:y`P‧‧‧
+  T_ 6: a4 3a 79 60 c9 f7 01 00  a4 3a 79 60 c9 f7 01 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_ 7: a4 3a 79 60 15 0b 02 00  a4 3a 79 60 15 0b 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_ 8: a4 3a 79 60 d4 22 02 00  a4 3a 79 60 d4 22 02 00  ‧:y`‧"‧‧‧:y`‧"‧‧
+  T_ 9: a4 3a 79 60 b1 3b 02 00  a4 3a 79 60 b1 3b 02 00  ‧:y`‧;‧‧‧:y`‧;‧‧
+  T_10: a4 3a 79 60 6a 50 02 00  a4 3a 79 60 6a 50 02 00  ‧:y`jP‧‧‧:y`jP‧‧
+  T_11: a4 3a 79 60 67 64 02 00  a4 3a 79 60 67 64 02 00  ‧:y`gd‧‧‧:y`gd‧‧
+  T_12: a4 3a 79 60 41 79 02 00  a4 3a 79 60 41 79 02 00  ‧:y`Ay‧‧‧:y`Ay‧‧
+  T_13: a4 3a 79 60 ac 8d 02 00  a4 3a 79 60 ac 8d 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_14: a4 3a 79 60 b9 a0 02 00  a4 3a 79 60 b9 a0 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_15: a4 3a 79 60 a8 b4 02 00  a4 3a 79 60 a8 b4 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_16: a4 3a 79 60 82 c8 02 00  a4 3a 79 60 82 c8 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_17: a4 3a 79 60 73 dc 02 00  a4 3a 79 60 73 dc 02 00  ‧:y`s‧‧‧‧:y`s‧‧‧
+  T_18: a4 3a 79 60 8f f1 02 00  a4 3a 79 60 8f f1 02 00  ‧:y`‧‧‧‧‧:y`‧‧‧‧
+  T_19: a4 3a 79 60 61 04 03 00  a4 3a 79 60 61 04 03 00  ‧:y`a‧‧‧‧:y`a‧‧‧
+
+Cipherbook: (below, wordwrapped to 80 chars)
+To Sherlock Holmes she is always THE woman. I have seldom heard him mention her 
+under any other name. In his eyes she eclipses and predominates the whole of her
+ sex. It was not that he felt any emotion akin to love for Irene Adler. All emot
+ions, and that one particularly, were abhorrent to his cold, precise but admirab
+ly balanced mind. He was, I take it, the most perfect reasoning and observing ma
+chine that the world has seen, but as a lover he would have placed himself in a 
+false position. He never spoke of the softer passions, save with a gibe and a sn
+eer. They were admirable things for the observer--excellent for drawing the veil
+ from men's motives and actions. But for the trained reasoner to admit such intr
+usions into his own delicate and finely adjusted temperament was to introduce a 
+distracting factor which might throw a doubt upon all his mental results. Grit i
+n a sensitive instrument, or a crack in one of his own high-power lenses, would 
+not be more disturbing than a strong emotion in a nature such as his. And yet th
+ere was but one woman to him, and that woman was the late Irene Adler, of dubiou
+s and questionable memory.  I had seen little of Holmes lately. My marriage had 
+drifted us away from each other. My own complete happiness, and the home-centred
+ ifi
+
+Stage 1
+==========
+Punctuation stripped cipherbook length: 1024
+Punctuation stripped cipherbook, as hexadecimal bytes and ASCII: (below)
+0x0000: 54 6f 53 68 65 72 6c 6f  63 6b 48 6f 6c 6d 65 73  ToSherlockHolmes
+0x0010: 73 68 65 69 73 61 6c 77  61 79 73 54 48 45 77 6f  sheisalwaysTHEwo
+0x0020: 6d 61 6e 49 68 61 76 65  73 65 6c 64 6f 6d 68 65  manIhaveseldomhe
+0x0030: 61 72 64 68 69 6d 6d 65  6e 74 69 6f 6e 68 65 72  ardhimmentionher
+0x0040: 75 6e 64 65 72 61 6e 79  6f 74 68 65 72 6e 61 6d  underanyothernam
+0x0050: 65 49 6e 68 69 73 65 79  65 73 73 68 65 65 63 6c  eInhiseyessheecl
+0x0060: 69 70 73 65 73 61 6e 64  70 72 65 64 6f 6d 69 6e  ipsesandpredomin
+0x0070: 61 74 65 73 74 68 65 77  68 6f 6c 65 6f 66 68 65  atesthewholeofhe
+0x0080: 72 73 65 78 49 74 77 61  73 6e 6f 74 74 68 61 74  rsexItwasnotthat
+0x0090: 68 65 66 65 6c 74 61 6e  79 65 6d 6f 74 69 6f 6e  hefeltanyemotion
+0x00a0: 61 6b 69 6e 74 6f 6c 6f  76 65 66 6f 72 49 72 65  akintoloveforIre
+0x00b0: 6e 65 41 64 6c 65 72 41  6c 6c 65 6d 6f 74 69 6f  neAdlerAllemotio
+0x00c0: 6e 73 61 6e 64 74 68 61  74 6f 6e 65 70 61 72 74  nsandthatonepart
+0x00d0: 69 63 75 6c 61 72 6c 79  77 65 72 65 61 62 68 6f  icularlywereabho
+0x00e0: 72 72 65 6e 74 74 6f 68  69 73 63 6f 6c 64 70 72  rrenttohiscoldpr
+0x00f0: 65 63 69 73 65 62 75 74  61 64 6d 69 72 61 62 6c  ecisebutadmirabl
+0x0100: 79 62 61 6c 61 6e 63 65  64 6d 69 6e 64 48 65 77  ybalancedmindHew
+0x0110: 61 73 49 74 61 6b 65 69  74 74 68 65 6d 6f 73 74  asItakeitthemost
+0x0120: 70 65 72 66 65 63 74 72  65 61 73 6f 6e 69 6e 67  perfectreasoning
+0x0130: 61 6e 64 6f 62 73 65 72  76 69 6e 67 6d 61 63 68  andobservingmach
+0x0140: 69 6e 65 74 68 61 74 74  68 65 77 6f 72 6c 64 68  inethattheworldh
+0x0150: 61 73 73 65 65 6e 62 75  74 61 73 61 6c 6f 76 65  asseenbutasalove
+0x0160: 72 68 65 77 6f 75 6c 64  68 61 76 65 70 6c 61 63  rhewouldhaveplac
+0x0170: 65 64 68 69 6d 73 65 6c  66 69 6e 61 66 61 6c 73  edhimselfinafals
+0x0180: 65 70 6f 73 69 74 69 6f  6e 48 65 6e 65 76 65 72  epositionHenever
+0x0190: 73 70 6f 6b 65 6f 66 74  68 65 73 6f 66 74 65 72  spokeofthesofter
+0x01a0: 70 61 73 73 69 6f 6e 73  73 61 76 65 77 69 74 68  passionssavewith
+0x01b0: 61 67 69 62 65 61 6e 64  61 73 6e 65 65 72 54 68  agibeandasneerTh
+0x01c0: 65 79 77 65 72 65 61 64  6d 69 72 61 62 6c 65 74  eywereadmirablet
+0x01d0: 68 69 6e 67 73 66 6f 72  74 68 65 6f 62 73 65 72  hingsfortheobser
+0x01e0: 76 65 72 65 78 63 65 6c  6c 65 6e 74 66 6f 72 64  verexcellentford
+0x01f0: 72 61 77 69 6e 67 74 68  65 76 65 69 6c 66 72 6f  rawingtheveilfro
+0x0200: 6d 6d 65 6e 73 6d 6f 74  69 76 65 73 61 6e 64 61  mmensmotivesanda
+0x0210: 63 74 69 6f 6e 73 42 75  74 66 6f 72 74 68 65 74  ctionsButforthet
+0x0220: 72 61 69 6e 65 64 72 65  61 73 6f 6e 65 72 74 6f  rainedreasonerto
+0x0230: 61 64 6d 69 74 73 75 63  68 69 6e 74 72 75 73 69  admitsuchintrusi
+0x0240: 6f 6e 73 69 6e 74 6f 68  69 73 6f 77 6e 64 65 6c  onsintohisowndel
+0x0250: 69 63 61 74 65 61 6e 64  66 69 6e 65 6c 79 61 64  icateandfinelyad
+0x0260: 6a 75 73 74 65 64 74 65  6d 70 65 72 61 6d 65 6e  justedtemperamen
+0x0270: 74 77 61 73 74 6f 69 6e  74 72 6f 64 75 63 65 61  twastointroducea
+0x0280: 64 69 73 74 72 61 63 74  69 6e 67 66 61 63 74 6f  distractingfacto
+0x0290: 72 77 68 69 63 68 6d 69  67 68 74 74 68 72 6f 77  rwhichmightthrow
+0x02a0: 61 64 6f 75 62 74 75 70  6f 6e 61 6c 6c 68 69 73  adoubtuponallhis
+0x02b0: 6d 65 6e 74 61 6c 72 65  73 75 6c 74 73 47 72 69  mentalresultsGri
+0x02c0: 74 69 6e 61 73 65 6e 73  69 74 69 76 65 69 6e 73  tinasensitiveins
+0x02d0: 74 72 75 6d 65 6e 74 6f  72 61 63 72 61 63 6b 69  trumentoracracki
+0x02e0: 6e 6f 6e 65 6f 66 68 69  73 6f 77 6e 68 69 67 68  noneofhisownhigh
+0x02f0: 70 6f 77 65 72 6c 65 6e  73 65 73 77 6f 75 6c 64  powerlenseswould
+0x0300: 6e 6f 74 62 65 6d 6f 72  65 64 69 73 74 75 72 62  notbemoredisturb
+0x0310: 69 6e 67 74 68 61 6e 61  73 74 72 6f 6e 67 65 6d  ingthanastrongem
+0x0320: 6f 74 69 6f 6e 69 6e 61  6e 61 74 75 72 65 73 75  otioninanaturesu
+0x0330: 63 68 61 73 68 69 73 41  6e 64 79 65 74 74 68 65  chashisAndyetthe
+0x0340: 72 65 77 61 73 62 75 74  6f 6e 65 77 6f 6d 61 6e  rewasbutonewoman
+0x0350: 74 6f 68 69 6d 61 6e 64  74 68 61 74 77 6f 6d 61  tohimandthatwoma
+0x0360: 6e 77 61 73 74 68 65 6c  61 74 65 49 72 65 6e 65  nwasthelateIrene
+0x0370: 41 64 6c 65 72 6f 66 64  75 62 69 6f 75 73 61 6e  Adlerofdubiousan
+0x0380: 64 71 75 65 73 74 69 6f  6e 61 62 6c 65 6d 65 6d  dquestionablemem
+0x0390: 6f 72 79 49 68 61 64 73  65 65 6e 6c 69 74 74 6c  oryIhadseenlittl
+0x03a0: 65 6f 66 48 6f 6c 6d 65  73 6c 61 74 65 6c 79 4d  eofHolmeslatelyM
+0x03b0: 79 6d 61 72 72 69 61 67  65 68 61 64 64 72 69 66  ymarriagehaddrif
+0x03c0: 74 65 64 75 73 61 77 61  79 66 72 6f 6d 65 61 63  tedusawayfromeac
+0x03d0: 68 6f 74 68 65 72 4d 79  6f 77 6e 63 6f 6d 70 6c  hotherMyowncompl
+0x03e0: 65 74 65 68 61 70 70 69  6e 65 73 73 61 6e 64 74  etehappinessandt
+0x03f0: 68 65 68 6f 6d 65 63 65  6e 74 72 65 64 69 66 69  hehomecentredifi
+
+Stage 2
+==========
+Key k2: 76 65 72 65 78 63 65 6c  6c 65 6e 74 66 6f 72 64  verexcellentford
+
+Stage 3
+==========
+Key k1, as hexadecimal bytes and ASCII: (below)
+0x0000: 78 40 29 ed c6 88 80 a4  2b 54 06 d1 a5 8b ba 0b  x@)‧‧‧‧‧+T‧‧‧‧‧‧
+0x0010: e5 3f e1 53 40 16 96 6e  5b 55 49 e9 e8 84 6c 17  ‧?‧S@‧‧n[UI‧‧‧l‧
+0x0020: 5d af 0a 58 d3 e2 a4 81  df 06 b0 08 6b 02 00 2d  ]‧‧X‧‧‧‧‧‧‧‧k‧‧-
+0x0030: 16 87 10 f5 26 be 1b 83  5c 22 fe 3e c8 ee e5 ce  ‧‧‧‧&‧‧‧\"‧>‧‧‧‧
+0x0040: 7b 96 fe e4 e2 08 3b 4e  7f f3 9e 7a 6f 18 e4 9a  {‧‧‧‧‧;N‧‧‧zo‧‧‧
+0x0050: 51 48 1e 21 1e 90 b7 65  3f 71 34 00 58 5d 1a 0f  QH‧!‧‧‧e?q4‧X]‧‧
+0x0060: 2a 65 4e b1 89 e1 5e 68  ef 75 5b 72 9a a3 e1 42  *eN‧‧‧^h‧u[r‧‧‧B
+0x0070: 83 6e 2f 55 2f 73 b8 ad  2a de 70 d4 5d 14 55 e9  ‧n/U/s‧‧*‧p‧]‧U‧
+
+Stage 4
+==========
+Decrypted ciphertext, as hexadecimal bytes and ASCII: (below)
+0x0000: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0010: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0020: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0030: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0040: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0050: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0060: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+0x0070: 54 45 53 54 54 45 53 54  54 45 53 54 54 45 53 54  TESTTESTTESTTEST
+
+Decrypted ciphertext, as plaintext: (below)
+TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST
+

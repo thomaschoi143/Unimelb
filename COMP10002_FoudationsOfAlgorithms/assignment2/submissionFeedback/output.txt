@@ -1,0 +1,137 @@
+
+Compiling with gcc -Wall -std=c99 ... 
+Compilation succeeded.
+ 
+============================================
+Test for input file: invis0.in
+$algorithm
+n
+#3algorithms
+$is
+vt
+#0was1been2being
+$winter
+vt n
+#0wintered1wintered2wintering3winters
+**********
+algorithm was awesome 
+ 
+Expected results:                                                  Your results:
+==========================Stage 1==========================        ==========================Stage 1==========================
+Word 0: algorithm                                                  Word 0: algorithm
+POS: n                                                             POS: n
+Form: 3algorithms                                                  Form: 3algorithms
+==========================Stage 2==========================        ==========================Stage 2==========================
+Number of words: 3                                                 Number of words: 3
+Average number of variation forms per word: 2.67                   Average number of variation forms per word: 2.67
+==========================Stage 3==========================        ==========================Stage 3==========================
+algorithm                 n                                        algorithm                 n
+was                       NOT_FOUND                                was                       NOT_FOUND
+awesome                   NOT_FOUND                                awesome                   NOT_FOUND
+==========================Stage 4==========================        ==========================Stage 4==========================
+algorithm                 algorithm                 n              algorithm                 algorithm                 n
+was                       is                        vt             was                       is                        vt
+awesome                   awesome                   NOT_FOUND      awesome                   awesome                   NOT_FOUND
+ 
+Your results seem to be CORRECT.  :)
+ 
+============================================
+Test for input file: invis1.in
+$a
+det
+#
+$algorithmabcdefghijklm
+n
+#3algorithmabcdefghijklms
+$as
+adv conj prep
+#
+$compute
+vt
+#0computed1computed2computing
+$is
+vt
+#0was1been2being
+$study
+vt n
+#0studied1studied2studying3studies
+$zebra
+n
+#3zebra
+$zza
+adv
+#
+$zzb
+adv
+#
+$zzc
+adv
+#
+$zzd
+adv
+#
+$zze
+adv
+#
+$zzf
+adv
+#
+$zzz
+n vi vt pron lv
+#0zzz1zzz2zzz3zzz
+**********
+there is a long and beautiful life ahead of you as long as you kept studying computer science al algorithmabcdefghijklms 
+ 
+Expected results:                                                  Your results:
+==========================Stage 1==========================        ==========================Stage 1==========================
+Word 0: a                                                          Word 0: a
+POS: det                                                           POS: det
+Form:                                                              Form: 
+==========================Stage 2==========================        ==========================Stage 2==========================
+Number of words: 14                                                Number of words: 14
+Average number of variation forms per word: 1.14                   Average number of variation forms per word: 1.14
+==========================Stage 3==========================        ==========================Stage 3==========================
+there                     NOT_FOUND                                there                     NOT_FOUND
+is                        vt                                       is                        vt
+a                         det                                      a                         det
+long                      NOT_FOUND                                long                      NOT_FOUND
+and                       NOT_FOUND                                and                       NOT_FOUND
+beautiful                 NOT_FOUND                                beautiful                 NOT_FOUND
+life                      NOT_FOUND                                life                      NOT_FOUND
+ahead                     NOT_FOUND                                ahead                     NOT_FOUND
+of                        NOT_FOUND                                of                        NOT_FOUND
+you                       NOT_FOUND                                you                       NOT_FOUND
+as                        adv conj prep                            as                        adv conj prep
+long                      NOT_FOUND                                long                      NOT_FOUND
+as                        adv conj prep                            as                        adv conj prep
+you                       NOT_FOUND                                you                       NOT_FOUND
+kept                      NOT_FOUND                                kept                      NOT_FOUND
+studying                  NOT_FOUND                                studying                  NOT_FOUND
+computer                  NOT_FOUND                                computer                  NOT_FOUND
+science                   NOT_FOUND                                science                   NOT_FOUND
+al                        NOT_FOUND                                al                        NOT_FOUND
+algorithmabcdefghijklms   NOT_FOUND                                algorithmabcdefghijklms   NOT_FOUND
+==========================Stage 4==========================        ==========================Stage 4==========================
+there                     there                     NOT_FOUND      there                     there                     NOT_FOUND
+is                        is                        vt             is                        is                        vt
+a                         a                         det            a                         a                         det
+long                      long                      NOT_FOUND      long                      long                      NOT_FOUND
+and                       and                       NOT_FOUND      and                       and                       NOT_FOUND
+beautiful                 beautiful                 NOT_FOUND      beautiful                 beautiful                 NOT_FOUND
+life                      life                      NOT_FOUND      life                      life                      NOT_FOUND
+ahead                     ahead                     NOT_FOUND      ahead                     ahead                     NOT_FOUND
+of                        of                        NOT_FOUND      of                        of                        NOT_FOUND
+you                       you                       NOT_FOUND      you                       you                       NOT_FOUND
+as                        as                        adv conj pr    as                        as                        adv conj pr
+long                      long                      NOT_FOUND      long                      long                      NOT_FOUND
+as                        as                        adv conj pr    as                        as                        adv conj pr
+you                       you                       NOT_FOUND      you                       you                       NOT_FOUND
+kept                      kept                      NOT_FOUND      kept                      kept                      NOT_FOUND
+studying                  study                     vt n           studying                  study                     vt n
+computer                  computer                  NOT_FOUND      computer                  computer                  NOT_FOUND
+science                   science                   NOT_FOUND      science                   science                   NOT_FOUND
+al                        al                        NOT_FOUND      al                        al                        NOT_FOUND
+algorithmabcdefghijklms   algorithmabcdefghijklm    n              algorithmabcdefghijklms   algorithmabcdefghijklm    n
+ 
+Your results seem to be CORRECT.  :)
+ 
