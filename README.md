@@ -13,4 +13,10 @@ COMP20003 Algorithms and Data Structures (C language):
 -- Assignment 2 - Voronoi Diagram, marks: 15/15  
 -- Assignment 3 - Sokoban AI algorithm, marks: 15/15  
 
+Year 2 Semester 1 (2022 March)  
+SWEN20003 Object Oriented Software Development (Java):  
+-- Project 1 - Shadow Pirate, marks: 7.5/8  
+-- Project 2A - UML class Diagram, marks: 7.5/8  
+-- Project 2B - Shadow Pirate(Advanced), marks: 14/14 
+
 Coded with love and care ❤️
