@@ -1,0 +1,99 @@
+Thomas Choi inchongc 1202247 
+
+The implementation of the application layer protocol for this RPC system:
+Transport layer protocol: TCP
+We could have used UDP, which has no delay waiting to recover lost packets. However, it does not provide reliable and in-order data transfer, which means 
+there are packet duplicates or losses.
+
+Non-persistent TCP connection is chosen because I think it is simpler to implement the non-blocking feature. One TCP connection per request from clients.
+
+Start the server by rpc_serve_all.
+Client makes a request and connects to the server by rpc_call or rpc_find
+
+To transfer data: send a prefix and then a body
+
+Bytes structure of the prefix:
+0: type of the message ('F' for find request, 'C' for call request, 'H' for handler index response, 'R' for response payload, 'E' for error)
+1~4: the length of body (int32) in the network byte order, 0 in case of error and invalid response
+
+Byte structure of the payload(rpc_data):
+0~7: data1 in the network byte order (fixed at 64 bits)
+Starting from the 8th byte: data2 
+data2_len can be calculated from length_bytes
+
+Fixed sized field are used to encode the size of the data because it is simpler to implement and the length of the data is not very long 
+(data2_len < 100000).
+
+Client:
+--Make a find request(rpc_find):
+----Connect to the server
+----Sending request:
+----1. Send the prefix of type 'F'
+----2. Send the search handler name
+----Receiving response:
+----1. Read the prefix
+----2a. If the type is 'E', handler name is not found, return NULL
+----2b. Read the handler index (uint32), store it in the handle
+----Close the connection
+--Make a call request:
+----Connect to the server
+----Sending request:
+----1. Send the prefix of type 'C'
+----2. Send the handler index and the input payload in byte format:  
+----   the first 4 bytes are handler index in the network byte order and the latter bytes are the input payload in byte format
+----Receiving response:
+----1. Read the prefix
+----2a. If the type is 'R', read the response payload
+----2b. If the type is 'R' but 0 length_bytes, NULL or invalid payload is responded, return NULL
+----2c. If the type is 'E', the handler index is invalid, return NULL
+----Close the connection
+------ * Other errors during making requests, such as invalid input and overlength error, will casue the client to close the connection
+         and return NULL
+
+Server:
+--Handle requests:
+--1. Read the prefix
+--If the type of the message is 'F':
+----2a. handle find request:
+------ (1) Read the name of the handler for length_bytes
+------ (2) Search for the handler name and get the uint32 handler index
+------ (3) Send the prefix of type 'H'
+------ (4) Send the handler index (uint32) in the network byte order.
+------ * If handler name is not found, send prefix of type 'E' with 0 length_bytes and close the connection
+--If the type of the message is 'C':
+----2b. handle call request:
+------ (1) Read the handler index and payload
+------     the first 4 bytes are handler index in the network byte order and the latter bytes are the input payload in byte format
+------ (2) Execute the handler and get response payload
+------ (3) Send the prefix of type 'R'
+------ (4) Send the response payload
+------ * If the handler indix is invalid, send prefix of type 'E' with 0 length_bytes and close the connection
+------ * If the handler responses NULL or invalid payload, send prefix of type 'R' with 0 length_bytes and close the connection
+------ * Other errors during handling requests, such as malloc failures, will casue the server to close the connection
+
+Answers to the questions:
+1. The server should only accept a subset of users for both cases. If everyone is allowed to search for a handler and run it on the server, it will increase
+   the workload of the server and potentially brings security concerns because the handler may provide confidential data to the client.
+
+2. Authentication should be provided by the RPC framework for both cases because only the RPC framework should handle the communication between clients and the server, including
+   login and logout from the server.
+
+3. TCP should be used because it can handle IP layer packet loss and deplication, run on top of IPv6 and handle the fact that IP packets have a 
+   maximum allowed size, meeting the protocol requirements.
+   Pros: - data transmission is in-order and reliable, while UDP does not provide in-order and reliable data transmission. 
+   Cons: - When client changes network, the connection will lose because TCP sockets are named by 5 tuples (including the source IP address). 
+           However, QUIC can reconnect to a different IP address mid flow.
+         - TCP is byte-stream oriented and does not preserver message boundaries, while UDP does.
+
+4. Since rpc_init_server() has the argument of the port number, it is best to create the listening socket in it and return the socket as part of the server state.
+   accept() is in rpc_serve_all(), so it creates the connection socket.
+   Since non-persistent connection is chosen in the implementation, the client side socket is created when the client makes the request (in rpc_find or rpc_call)
+   In a real world RPC server, persistent connection may be better because of the lower OS overhead. Then the client side socket will be created in rpc_init_client() 
+   and return the socket as part of the client state.
+
+5. rpc_client and rpc_server should be allocated dynamically for both cases because we have to return its pointer from rpc_init_client or rpc_init_server. Client has to
+   free(rpc_client*) after the last request and there is memory leak when the server is killed (if not handling SIGINT)
+
+6. "Network byte order" is the big-endian order. If 2 hosts use different byte orders and communicate without standardization, integers will be presented in 
+   different values. Thus, we will have to convert integers to the network byte order before sending out and convert back to the local byte order after receiving 
+   integers in. This applys to both cases.

@@ -1,0 +1,21 @@
+[PacMan] Location: 11-7. Eat Pill/Item: pills
+[Alien] Location: 2-5
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 3-6
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 4-5
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 5-5
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 6-5
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 6-6
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 7-7
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 8-7
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 9-7
+[PacMan] Location: 11-7. Score: 1. Pills: 1
+[Alien] Location: 10-7
+[PacMan] Location: 11-7. Score: 1. Pills: 1

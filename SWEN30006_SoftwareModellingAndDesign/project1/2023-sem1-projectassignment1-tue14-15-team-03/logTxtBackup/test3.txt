@@ -1,0 +1,9 @@
+[PacMan] Location: 15-8. Score: 0. Pills: 0
+[Troll] Location: 17-9
+[PacMan] Location: 15-8. Score: 0. Pills: 0
+[Troll] Location: 16-9
+[PacMan] Location: 15-8. Score: 0. Pills: 0
+[Troll] Location: 15-9
+[PacMan] Location: 15-8. Score: 0. Pills: 0
+[Troll] Location: 15-8
+GAME OVER
