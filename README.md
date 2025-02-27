@@ -18,9 +18,18 @@ This repository stores all of my past programming projects at the University of 
 
 ### Year 2 Semester 1 (2022 March)  
 * SWEN20003 Object Oriented Software Development (Java):
-  *  Project 1 - Shadow Pirate, marks: 7.5/8  
+  * Project 1 - Shadow Pirate, marks: 7.5/8  
   * Project 2A - UML class Diagram, marks: 7.5/8  
   * Project 2B - Shadow Pirate(Advanced), marks: 14/14
+
+### Year 3 Semester 1 (2023 March)
+* SWEN30006 Software Modelling and Design (Java):
+  * Project 1 - Pacman in the Multiverse, marks: 11.5/12  
+  * Project 2 - Pacman in the ToruseVerse, marks: 18.5/20
+
+* COMP30023 Computer Systems (C):
+  * Project 1 - Process Management, marks: 14.75/15  
+  * Project 2 - Remote Procedure Call System, marks: 14.75/15
 
 ## Master of Computer Science
 
